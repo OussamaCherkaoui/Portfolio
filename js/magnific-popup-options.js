@@ -30,3 +30,29 @@ $(document).ready(function() {
   magnifPopup();
 
 });
+
+document.getElementById('send-btn').addEventListener('click', function () {
+  const serviceID = "service_kvk0ise"; 
+  const templateID = "template_lac9qb5"; 
+
+  const params = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+  };
+
+  if (!params.name || !params.email || !params.message) {
+    alert("Kindly provide all the required details before submitting.");
+    return; // Arrête le traitement si un champ est vide
+}
+
+  emailjs.send(serviceID, templateID, params)
+      .then(response => {
+          alert("Message sent successfully!");
+          document.getElementById('contact-form').reset();
+      })
+      .catch(error => {
+        alert("Error sending the message. Please try again.");
+          console.error("Error:", error);
+      });
+});
