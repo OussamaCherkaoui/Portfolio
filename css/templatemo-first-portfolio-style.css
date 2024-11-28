@@ -717,6 +717,7 @@ strong {
   margin-top: 24px;
   margin-bottom: 24px;
   padding: 40px;
+  cursor: pointer;
   transition: all ease 0.5s;
 }
 
@@ -744,7 +745,8 @@ strong {
 }
 
 .projects-title {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .projects-tag {
