@@ -507,7 +507,8 @@ strong {
 }
 
 .hero-image {
-  border: #52474781 12px solid;
+  border: #f6f6f6 8px solid;
+  padding: 4px;
   border-radius: 50%;
   position: absolute;
   right: 0;
@@ -1032,6 +1033,7 @@ strong {
     font-size: var(--copyright-text-font-size);
     padding: 8px 16px;
   }
+
 
   .navbar .container {
     background: var(--white-color);
